@@ -2,107 +2,167 @@
 <html>
 <head>
   <title>About Benkees</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: radial-gradient(circle at top, #1f3b2d 0%, #0b0b0b 45%, #000000 100%);
+      color: white;
+    }
+
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 20px 80px;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 0 0 20px;
+      font-size: 48px;
+    }
+
+    .lead {
+      text-align: center;
+      font-size: 20px;
+      line-height: 1.7;
+      margin: 0 0 50px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      color: black;
+      border-radius: 18px;
+      padding: 24px 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      text-align: center;
+    }
+
+    .card img {
+      width: 95px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      margin: 6px 0 10px;
+      font-size: 28px;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .back {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .back a {
+      color: white;
+      font-size: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      .lead {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
-<body style="margin:0; font-family:sans-serif; background:radial-gradient(circle at top, #1f3b2d 0%, #0b0b0b 45%, #000000 100%); color:white;">
+<body>
 
-  <div style="max-width:1100px; margin:0 auto; padding:60px 20px 80px;">
+  <div class="wrap">
+    <h1>About Benkees</h1>
 
-    <h1 style="text-align:center; margin:0 0 20px; font-size:48px;">About Benkees</h1>
-
-    <p style="text-align:center; font-size:20px; line-height:1.7; margin:0 0 50px;">
+    <p class="lead">
       Benkees is a fictional team created by Apex Angel.<br>
       Each character represents a different personality and emotion.
     </p>
 
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:30px;">
+    <div class="grid">
 
-      <div style="background:white; color:black; border-radius:18px; padding:24px 18px; box-shadow:0 10px 30px rgba(0,0,0,0.35); text-align:center;">
-        <img src="sakura.png" style="width:95px; margin-bottom:12px;">
-        <h3 style="margin:6px 0 10px; font-size:28px;">Sakura</h3>
-        <p style="margin:0; font-size:15px; line-height:1.6;">
-          Cheerful and kind-hearted.<br>
-          Represents warmth and innocence.
-        </p>
+      <div class="card">
+        <img src="sakura.png">
+        <h3>Sakura</h3>
+        <p>Cheerful and kind-hearted.<br>Represents warmth and innocence.</p>
       </div>
 
-      <div style="background:white; color:black; border-radius:18px; padding:24px 18px; box-shadow:0 10px 30px rgba(0,0,0,0.35); text-align:center;">
-        <img src="john.png" style="width:95px; margin-bottom:12px;">
-        <h3 style="margin:6px 0 10px; font-size:28px;">John</h3>
-        <p style="margin:0; font-size:15px; line-height:1.6;">
-          Calm and realistic.<br>
-          Represents balance and quiet thinking.
-        </p>
+      <div class="card">
+        <img src="john.png">
+        <h3>John</h3>
+        <p>Calm and realistic.<br>Represents balance and quiet thinking.</p>
       </div>
 
-      <div style="background:white; color:black; border-radius:18px; padding:24px 18px; box-shadow:0 10px 30px rgba(0,0,0,0.35); text-align:center;">
-        <img src="clara.png" style="width:95px; margin-bottom:12px;">
-        <h3 style="margin:6px 0 10px; font-size:28px;">Clara</h3>
-        <p style="margin:0; font-size:15px; line-height:1.6;">
-          Intellectual and thoughtful.<br>
-          Observes deeply.
-        </p>
+      <div class="card">
+        <img src="clara.png">
+        <h3>Clara</h3>
+        <p>Intellectual and thoughtful.<br>Observes deeply.</p>
       </div>
 
-      <div style="background:white; color:black; border-radius:18px; padding:24px 18px; box-shadow:0 10px 30px rgba(0,0,0,0.35); text-align:center;">
-        <img src="harry.png" style="width:95px; margin-bottom:12px;">
-        <h3 style="margin:6px 0 10px; font-size:28px;">Harry</h3>
-        <p style="margin:0; font-size:15px; line-height:1.6;">
-          Rebellious and sharp.<br>
-          Questions everything.
-        </p>
+      <div class="card">
+        <img src="harry.png">
+        <h3>Harry</h3>
+        <p>Rebellious and sharp.<br>Questions everything.</p>
       </div>
 
-      <div style="background:white; color:black; border-radius:18px; padding:24px 18px; box-shadow:0 10px 30px rgba(0,0,0,0.35); text-align:center;">
-        <img src="jimmy.png" style="width:95px; margin-bottom:12px;">
-        <h3 style="margin:6px 0 10px; font-size:28px;">Jimmy</h3>
-        <p style="margin:0; font-size:15px; line-height:1.6;">
-          Wild and emotional.<br>
-          Represents chaos and instinct.
-        </p>
+      <div class="card">
+        <img src="jimmy.png">
+        <h3>Jimmy</h3>
+        <p>Wild and emotional.<br>Represents chaos and instinct.</p>
       </div>
 
-      <div style="background:white; color:black; border-radius:18px; padding:24px 18px; box-shadow:0 10px 30px rgba(0,0,0,0.35); text-align:center;">
-        <img src="tanaka.png" style="width:95px; margin-bottom:12px;">
-        <h3 style="margin:6px 0 10px; font-size:28px;">Tanaka</h3>
-        <p style="margin:0; font-size:15px; line-height:1.6;">
-          Serious and disciplined.<br>
-          Represents structure.
-        </p>
+      <div class="card">
+        <img src="tanaka.png">
+        <h3>Tanaka</h3>
+        <p>Serious and disciplined.<br>Represents structure.</p>
       </div>
 
-      <div style="background:white; color:black; border-radius:18px; padding:24px 18px; box-shadow:0 10px 30px rgba(0,0,0,0.35); text-align:center;">
-        <img src="poko.png" style="width:95px; margin-bottom:12px;">
-        <h3 style="margin:6px 0 10px; font-size:28px;">Poko</h3>
-        <p style="margin:0; font-size:15px; line-height:1.6;">
-          Mysterious and silent.<br>
-          Exists beyond logic.
-        </p>
+      <div class="card">
+        <img src="poko.png">
+        <h3>Poko</h3>
+        <p>Mysterious and silent.<br>Exists beyond logic.</p>
       </div>
 
-      <div style="background:white; color:black; border-radius:18px; padding:24px 18px; box-shadow:0 10px 30px rgba(0,0,0,0.35); text-align:center;">
-        <img src="isabel.png" style="width:95px; margin-bottom:12px;">
-        <h3 style="margin:6px 0 10px; font-size:28px;">Isabel</h3>
-        <p style="margin:0; font-size:15px; line-height:1.6;">
-          Elegant and dominant.<br>
-          Represents control and pride.
-        </p>
+      <div class="card">
+        <img src="isabel.png">
+        <h3>Isabel</h3>
+        <p>Elegant and dominant.<br>Represents control and pride.</p>
       </div>
 
-      <div style="background:white; color:black; border-radius:18px; padding:24px 18px; box-shadow:0 10px 30px rgba(0,0,0,0.35); text-align:center;">
-        <img src="buster.png" style="width:95px; margin-bottom:12px;">
-        <h3 style="margin:6px 0 10px; font-size:28px;">Buster</h3>
-        <p style="margin:0; font-size:15px; line-height:1.6;">
-          Rough and aggressive.<br>
-          Represents raw power.
-        </p>
+      <div class="card">
+        <img src="buster.png">
+        <h3>Buster</h3>
+        <p>Rough and aggressive.<br>Represents raw power.</p>
       </div>
 
     </div>
 
-    <div style="text-align:center; margin-top:50px;">
-      <a href="index.html" style="color:white; font-size:20px;">Back to Home</a>
+    <div class="back">
+      <a href="index.html">Back to Home</a>
     </div>
-
   </div>
 
 </body>
