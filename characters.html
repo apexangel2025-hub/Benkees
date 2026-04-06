@@ -1,1 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Characters</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: radial-gradient(circle at top, #1f3b2d 0%, #0b0b0b 45%, #000000 100%);
+      color: white;
+    }
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 20px 80px;
+    }
+    h1 {
+      text-align: center;
+      margin: 0 0 40px;
+      font-size: 48px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+    .card {
+      background: white;
+      color: black;
+      border-radius: 18px;
+      padding: 24px 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      text-align: center;
+    }
+    .card img {
+      width: 95px;
+      margin-bottom: 12px;
+    }
+    .card h3 {
+      margin: 6px 0 10px;
+      font-size: 28px;
+    }
+    .card p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Characters</h1>
 
+    <div class="grid">
+      <div class="card">
+        <img src="sakura.png">
+        <h3>Sakura</h3>
+        <p>A normal high school girl.<br>Always smiling, kind, and gentle.</p>
+      </div>
+
+      <div class="card">
+        <img src="john.png">
+        <h3>John</h3>
+        <p>Sakura’s childhood friend.<br>Serious, but only speaks in realistic terms.</p>
+      </div>
+
+      <div class="card">
+        <img src="clara.png">
+        <h3>Clara</h3>
+        <p>A university student living near Sakura.<br>Loves literature and quiet moments.</p>
+      </div>
+
+      <div class="card">
+        <img src="harry.png">
+        <h3>Harry</h3>
+        <p>An unfriendly man inspired by Dirty Harry.<br>Seems cold, but actually kind at heart.</p>
+      </div>
+
+      <div class="card">
+        <img src="jimmy.png">
+        <h3>Jimmy</h3>
+        <p>A music-loving guy from the neighborhood.<br>Secretly prefers classical over rock.</p>
+      </div>
+
+      <div class="card">
+        <img src="tanaka.png">
+        <h3>Tanaka</h3>
+        <p>A middle-aged office worker.<br>Often says, "Things were better back then."</p>
+      </div>
+
+      <div class="card">
+        <img src="poko.png">
+        <h3>Poko</h3>
+        <p>Sakura’s childhood friend.<br>Almost silent—until danger appears.</p>
+      </div>
+
+      <div class="card">
+        <img src="isabel.png">
+        <h3>Isabel</h3>
+        <p>Almost like a villainess.<br>Polite but sharp-tongued, yet shy and kind inside.</p>
+      </div>
+
+      <div class="card">
+        <img src="buster.png">
+        <h3>Buster</h3>
+        <p>Rumored to be a "hitman" or "sniper".<br>In reality, just a professional pest control worker—perfect at his job.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
