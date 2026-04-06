@@ -1,23 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Benkees</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .layout {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 240px;
+      background: #0d0d0d;
+      padding: 40px 24px;
+      box-sizing: border-box;
+      border-right: 1px solid #222;
+    }
+
+    .sidebar h1 {
+      font-size: 24px;
+      margin: 0 0 32px;
+      letter-spacing: 1px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar a:hover {
+      opacity: 0.7;
+    }
+
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .top-image img {
+      max-width: 900px;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .apex-logo {
+      margin-top: 32px;
+    }
+
+    .apex-logo img {
+      max-width: 320px;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 12px;
+    }
+
+    .copyright {
+      font-size: 14px;
+      color: #aaa;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 900px) {
+      .layout {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #222;
+      }
+
+      .sidebar a {
+        margin-bottom: 14px;
+      }
+
+      .main {
+        padding: 30px 16px 40px;
+      }
+
+      .apex-logo img {
+        max-width: 220px;
+      }
+    }
+  </style>
 </head>
-<body style="background-color:black; text-align:center; color:white;">
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h1>Benkees</h1>
+      <a href="about.html">About Benkees</a>
+      <a href="about.html">Characters</a>
+      <a href="#">SHOP</a>
+    </aside>
 
-  <img src="main.png" style="width:800px; margin-top:100px;">
+    <main class="main">
+      <div class="top-image">
+        <img src="main.png" alt="Benkees">
+      </div>
 
-  <br><br><br>
-
-  <a href="https://www.redbubble.com/people/ApexAngelCom/shop?asc=u" style="color:white; font-size:24px; text-decoration:none;">
-    Shop (Redbubble)
-  </a>
-
-  <br><br>
-
-  <a href="about.html" style="color:white; font-size:20px; text-decoration:none;">
-    About Benkees
-  </a>
-
+      <div class="apex-logo">
+        <img src="apexangel.png" alt="Apex Angel">
+        <div class="copyright">© Apex Angel</div>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
